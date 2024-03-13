@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace OpenGT.Gphyc
 {
+    [Serializable]
     public class Force
     {
         public string name;

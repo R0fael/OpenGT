@@ -231,7 +231,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &44228059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -377,7 +376,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &108629157
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -628,7 +626,6 @@ MonoBehaviour:
   isDebugging: 1
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!135 &221367536
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1075,7 +1072,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &605731441
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1385,7 +1381,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &644444906
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1526,7 +1521,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &693134798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1751,7 +1745,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &751504426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2176,7 +2169,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &796834732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2694,7 +2686,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &985661283
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2830,7 +2821,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1076294933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2966,7 +2956,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1140442762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3276,7 +3265,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1258808251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3585,7 +3573,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1390913034
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3726,7 +3713,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1470912786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4047,7 +4033,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1914166662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4265,7 +4250,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &1982371176
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4627,7 +4611,6 @@ MonoBehaviour:
   isDebugging: 0
   velocity: {x: 0, y: 0, z: 0}
   isStopped: 0
-  forces: []
 --- !u!54 &2105023842
 Rigidbody:
   m_ObjectHideFlags: 0
