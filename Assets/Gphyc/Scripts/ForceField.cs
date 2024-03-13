@@ -2,23 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForceField : MonoBehaviour
+namespace OpenGT.Gphyc
 {
-    public Force force;
-    public Force forceOnExit;
-    private void OnTriggerStay(Collider other)
+    public class ForceField : MonoBehaviour
     {
-        if (other.gameObject.GetComponent<Object>() != null)
+        public Force force;
+        public Force forceOnExit;
+        private void OnTriggerStay(Collider other)
         {
-            other.gameObject.GetComponent<Object>().Affect(force);
+            if (other.gameObject.GetComponent<Object>() != null)
+            {
+                other.gameObject.GetComponent<Object>().Affect(force);
+            }
         }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.GetComponent<Object>() != null)
+        private void OnTriggerExit(Collider other)
         {
-            other.gameObject.GetComponent<Object>().Affect(forceOnExit);
+            if (other.gameObject.GetComponent<Object>() != null)
+            {
+                other.gameObject.GetComponent<Object>().Affect(forceOnExit);
+            }
         }
     }
 }
