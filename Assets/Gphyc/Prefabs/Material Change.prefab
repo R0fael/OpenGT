@@ -151,3 +151,13 @@ MonoBehaviour:
     GravityChangeState: 0
     material: {fileID: 2100000, guid: 46bb7553140e82842a7ccbf9f877fe89, type: 2}
     physicMaterial: {fileID: 0}
+  forceOnExit:
+    name: 
+    velocityBump: 0
+    force: {x: 0, y: 0, z: 0}
+    isTimeStop: 0
+    TimeStopState: 0
+    isGravityChange: 0
+    GravityChangeState: 0
+    material: {fileID: 2100000, guid: 4c3de799c2aeb61479df9fb1735ef150, type: 2}
+    physicMaterial: {fileID: 0}

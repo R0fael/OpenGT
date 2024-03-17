@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace OpenGT {
-    public class Manager
+namespace OpenGT.Manager {
+    public class Manager : MonoBehaviour
     {
         [Serializable]
         public enum TimePeriod
@@ -37,7 +37,7 @@ namespace OpenGT {
         {
             public object GetRoom(List<object> rooms, int seed, Transform position)
             {
-                OpenGT.Manager manager = new OpenGT.Manager();
+                Manager manager = new();
                 return rooms[manager.RandomByPlace(seed, seed * 11, seed * 101,position)];
             }
         }
