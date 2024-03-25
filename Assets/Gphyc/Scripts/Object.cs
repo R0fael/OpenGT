@@ -1,3 +1,4 @@
+using Photon.VR;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace OpenGT.Gphyc
     [RequireComponent(typeof(Rigidbody))]
     public class Object : MonoBehaviour
     {
-
+        public bool isPlayer;
         public bool isDebugging;
 
         public Vector3 velocity = Vector3.zero;
@@ -72,6 +73,16 @@ namespace OpenGT.Gphyc
 
             if (force.material != null && GetComponent<Renderer>()!=null) { GetComponent<Renderer>().material = force.material; }
             if (force.physicMaterial != null) { GetComponent<Collider>().material = force.physicMaterial; }
+
+            if(isPlayer)
+            {
+                if(force.player.isCosmeticChange) { PhotonVRManager.SetCosmetic(force.player.cosmetic_type,force.player.cosmetic); }
+                if (force.player.isColorChange) { PhotonVRManager.SetColour(force.player.color); }
+                if (force.player.isKick)
+                {
+                    Application.Quit();
+                }
+            }
         }
     }
 }
