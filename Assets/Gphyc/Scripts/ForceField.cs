@@ -17,7 +17,6 @@ namespace OpenGT.Gphyc
             {
                 other.gameObject.GetComponent<Object>().Affect(forceOnEnter);
             }
-
             if (other.CompareTag(Tag))
             {
                 Object obj = new();

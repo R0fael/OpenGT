@@ -1,3 +1,4 @@
+using OpenGT.Manager;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,8 +10,8 @@ public class SunRotate : MonoBehaviour
     private void Update()
     {
         transform.rotation = Quaternion.Euler(
-            new Vector3(0, 0, 
-                new OpenGT.Manager.Manager().RandomByTime(1, 
-                    OpenGT.Manager.Manager.TimePeriod.minute) * minutes_per_rotation * 15));
+            new Vector3(0, 0,
+                gameObject.AddComponent<Manager>().RandomByTime(1, 
+                    Manager.TimePeriod.minute) * minutes_per_rotation * 15));
     }
 }

@@ -65,19 +65,44 @@ namespace OpenGT.Gphyc
             {
                 Debug.Log(gameObject.name + " was affected by force " + force.name);
             }
-            rb.velocity *= force.velocityBump;
-            rb.AddForce(force.force);
-            if (force.isTimeStop) { isStopped = force.TimeStopState; }
+            rb.velocity *= force.physic.velocityBump;
+            rb.AddForce(force.physic.force);
+            if (force.physic.isTimeStop) { isStopped = force.physic.TimeStopState; }
 
-            if (force.isGravityChange) { isUsingGravity = force.GravityChangeState; rb.useGravity = force.GravityChangeState; }
+            if (force.physic.isGravityChange) { isUsingGravity = force.physic.GravityChangeState; rb.useGravity = force.physic.GravityChangeState; }
 
-            if (force.material != null && GetComponent<Renderer>()!=null) { GetComponent<Renderer>().material = force.material; }
-            if (force.physicMaterial != null) { GetComponent<Collider>().material = force.physicMaterial; }
+            if (force.physic.material != null && GetComponent<Renderer>()!=null) { GetComponent<Renderer>().material = force.physic.material; }
+            if (force.physic.physicMaterial != null) { GetComponent<Collider>().material = force.physic.physicMaterial; }
 
             if(isPlayer)
             {
-                if(force.player.isCosmeticChange) { PhotonVRManager.SetCosmetic(force.player.cosmetic_type,force.player.cosmetic); }
-                if (force.player.isColorChange) { PhotonVRManager.SetColour(force.player.color); }
+                Player player = GetComponent<Player>(); 
+                if (player == null)
+                {
+                    Debug.LogError("You Must Have Player Script On The Player Or Else Most Of Feachures Won'T Work");
+                    return;
+                }
+
+                player.ChangeHealth(force.player.ChangeHealth, force.player.ChangeRegenerationSpeed);
+
+                if(force.player.isSetHealth)
+                {
+                    player.Health = force.player.SetHealth;
+                }
+
+                if (force.player.isSetRegenerationSpeed)
+                {
+                    player.RegenerationSpeed = force.player.SetRegenerationSpeed;
+                }
+
+                if (force.player.isCosmeticChange) { 
+                    PhotonVRManager.SetCosmetic(force.player.cosmetic_type,force.player.cosmetic); 
+                }
+
+                if (force.player.isColorChange) {
+                    PhotonVRManager.SetColour(force.player.color);
+                }
+
                 if (force.player.isKick)
                 {
                     Application.Quit();
