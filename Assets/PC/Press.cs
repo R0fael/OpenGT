@@ -13,7 +13,6 @@ namespace OpenGT.PC
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Something...");
             if (other.CompareTag(HandTag))
             {
                 computer.Press(Letter);
